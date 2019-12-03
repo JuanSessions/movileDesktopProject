@@ -9,7 +9,7 @@ body {
 
     text-align: center;
     padding: 1rem 3rem 3rem;
-    background-image: url(raindrops-3216609_1920.jpg);
+    background-image: url(./raindrops-3216609_1920.jpg);
 }
 
 nav {
@@ -18,7 +18,13 @@ nav {
 
 }
 
+.top-nav {
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
 header {
@@ -54,13 +60,6 @@ h1 {
     background-color: rgb(26, 73, 26);
 }
 
-.top-nav {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
 
 img {
     max-width: 100%;
@@ -142,6 +141,7 @@ a:active {
         height: 10rem;
         flex-grow: 1;
     }
+.top-nav {}
 
     #box-1,
     #box-2,

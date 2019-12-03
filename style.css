@@ -2,6 +2,10 @@ html {
     font-size: 100%;
 }
 
+* {
+    padding: 0%;
+}
+
 body {
 
     font-family: 'Montserrat', sans-serif;
@@ -13,8 +17,7 @@ body {
 }
 
 nav {
-    height: 5rem;
-    background-color: rgb(151, 122, 151);
+    background-color: rgb(53, 46, 53);
 
 }
 
@@ -24,6 +27,22 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    height: 100px;
+    justify-content: space-evenly;
+
+
+}
+
+.top-nav li {
+
+    background-color: darkslategrey;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+
+
+
+
 }
 
 
@@ -69,27 +88,40 @@ ul {
     list-style: none;
 }
 
+a {
+    text-align: center;
+}
+
 a:link {
     color: navy
 }
 
 a:visited {
-    color: rgb(192, 21, 164);
+    color: rgb(36, 27, 34);
 }
 
 a:hover {
     color: rgb(201, 128, 34);
-}
+    padding: 1rem 3rem 3rem;
+    padding: 1rem 3rem 3rem;
+    padding: 1rem 3rem 3rem;
+    padding: 1rem 3rem 3rem;
+    ,
+    23,
+    45);
+    padding: 1rem 3rem 3rem;
+    padding: 1rem 3rem 3rem;
 
-a:active {
-    color: rgb(151, 23, 45);
-}
+    @media (max-width: 640px) {
+        .top-nav {
+            justify-content: center;
+        }
+    }
 
+    /* -------responsive part-------- */
 
-/* -------responsive part-------- */
-
-/* Small devices */
-/* @media only screen and (max-width: 600px) {
+    /* Small devices */
+    /* @media only screen and (max-width: 600px) {
     section {
         display: flex;
         flex-direction: row;
@@ -103,7 +135,7 @@ a:active {
     }
 } */
 
-/* Medium devices 
+    /* Medium devices 
 @media only screen and (min-width: 601px) {
     section {
         display: flex;
@@ -129,7 +161,7 @@ a:active {
 }
 
 /* Large devices   */
-/* @media only screen and (min-width: 801px) {
+    /* @media only screen and (min-width: 801px) {
     section {
         display: flex;
         flex-direction: row;

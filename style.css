@@ -16,6 +16,23 @@ body {
     background-image: url(./raindrops-3216609_1920.jpg);
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
 nav {
     background-color: rgb(53, 46, 53);
     border-radius: 10px;

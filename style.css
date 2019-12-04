@@ -18,6 +18,7 @@ body {
 
 nav {
     background-color: rgb(53, 46, 53);
+    border-radius: 10px;
 
 }
 
@@ -35,9 +36,10 @@ nav {
 
 .top-nav li {
 
-    background-color: darkslategrey;
+    font-weight: bold;
+    background-image: url(./lakeTexture.jpg);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px solid black;
 
 
@@ -64,19 +66,20 @@ h1 {
 }
 
 .box-1 {
-    background-color: rgb(116, 75, 116);
+    background-color: rgb(184, 169, 199);
+
 }
 
 .box-2 {
-    background-color: rgb(132, 0, 255);
+    background-color: rgb(117, 151, 117);
 }
 
 .box-3 {
-    background-color: rgb(25, 60, 80);
+    background-color: rgb(91, 120, 136);
 }
 
 .box-4 {
-    background-color: rgb(26, 73, 26);
+    background-color: rgb(92, 148, 145);
 }
 
 
@@ -90,38 +93,26 @@ ul {
 
 a {
     text-align: center;
+    color: black;
 }
 
 a:link {
-    color: navy
-}
-
-a:visited {
-    color: rgb(36, 27, 34);
+    color: rgb(192, 31, 58);
 }
 
 a:hover {
-    color: rgb(201, 128, 34);
-    padding: 1rem 3rem 3rem;
-    padding: 1rem 3rem 3rem;
-    padding: 1rem 3rem 3rem;
-    padding: 1rem 3rem 3rem;
-    ,
-    23,
-    45);
-    padding: 1rem 3rem 3rem;
-    padding: 1rem 3rem 3rem;
 
-    @media (max-width: 640px) {
-        .top-nav {
-            justify-content: center;
-        }
-    }
+    color: rgb(99, 29, 29);
+}
 
-    /* -------responsive part-------- */
+@media (max-width: 769px) {
+    /* STYLES HERE */
+}
 
-    /* Small devices */
-    /* @media only screen and (max-width: 600px) {
+/* -------responsive part-------- */
+
+/* Small devices */
+/* @media only screen and (max-width: 600px) {
     section {
         display: flex;
         flex-direction: row;
@@ -135,7 +126,7 @@ a:hover {
     }
 } */
 
-    /* Medium devices 
+/* Medium devices 
 @media only screen and (min-width: 601px) {
     section {
         display: flex;
@@ -161,7 +152,7 @@ a:hover {
 }
 
 /* Large devices   */
-    /* @media only screen and (min-width: 801px) {
+/* @media only screen and (min-width: 801px) {
     section {
         display: flex;
         flex-direction: row;

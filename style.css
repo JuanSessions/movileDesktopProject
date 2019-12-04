@@ -3,36 +3,92 @@ html {
 }
 
 * {
-    padding: 0%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     background-image: url(./raindrops-3216609_1920.jpg);
     line-height: 1.5;
 }
 
-#menu-btn {
-    width: 50px;
-    height: auto;
-    margin: 0 auto;
-    padding: 2rem 0;
+#desktop-nav {
+    display: none;
+}
+
+#overlay {
+    height: 0;
+    width: 90%;
+    margin-left: 5%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(53, 46, 53);
+    overflow-y: hidden;
+    border-radius: 20px;
+}
+
+.toggle-navbar {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+#landing {
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 20px;
+    background-color: rgb(53, 46, 53);
 }
 
 .bar {
-    width: 30px;
+    width: 35px;
     height: 3px;
-    margin-bottom: 5px;
-    background-color: white;
+    margin: 8px auto;
+    background-color: #fff;
 }
 
-header,
+#menu-btn {
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.white {
+    background-color: #fff;
+}
+
+#top-nav {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+
+#top-nav li {
+
+    font-weight: bold;
+    background-image: url(./lakeTexture.jpg);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+
 article,
+h1,
 h2,
 p,
-ul,
 footer {
     text-align: center;
     padding: 1rem;
@@ -57,54 +113,8 @@ article {
 }
 
 
-
-
-nav {
-    background-color: rgb(53, 46, 53);
-    border-radius: 10px;
-
-}
-
-
-ul li {
-    list-style: none;
-    font-size: 1rem;
-}
-
-#top-nav {
-
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 50px;
-    justify-content: space-evenly;
-    padding-bottom: 1rem;
-    padding-top: 0;
-
-}
-
-#top-nav li {
-
-    font-weight: bold;
-    background-image: url(./lakeTexture.jpg);
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid black;
-
-
-
-
-}
-
-
-header {
-    margin-bottom: 2rem;
-}
-
 h1 {
-    font-family: 'Bebas Neue',
-        cursive;
+    font-family: 'Bebas Neue', cursive;
     font-size: 4rem;
 
 }
@@ -112,7 +122,6 @@ h1 {
 .box {
     padding: 2rem;
     border-radius: 1rem;
-
 
 }
 
@@ -141,10 +150,6 @@ a {
 
 .link {
     color: rgb(230, 20, 55);
-}
-
-a:link {
-    color: rgb(192, 31, 165);
 }
 
 a:hover {
@@ -177,8 +182,38 @@ a:hover {
 
 }
 
-@media (max-width: 769px) {
-    /* STYLES HERE */
+@media (min-width: 769px) {
+
+    #top-nav {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+    
+
+    #landing {
+        display: none;
+    }
+
+    #desktop-nav {
+        width: 90%;
+        margin: 1rem auto;
+        border-radius: 20px;
+        background-color: rgb(53, 46, 53);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+
+    #desktop-nav li {
+        font-weight: bold;
+        background-image: url(./lakeTexture.jpg);
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
 }
 
 /* -------responsive part-------- */

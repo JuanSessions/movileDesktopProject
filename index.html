@@ -20,22 +20,34 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
 
-        <nav>
-            <div id="menu-btn" onclick="toggleBar()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <ul id="desktop-nav">
+            <li><a href="#info">Basic-Info</a> </li>
+            <li><a href="#weather">Weather</a> </li>
+            <li><a href="#economy">Economy</a> </li>
+            <li><a href="#tourism">Tourism</a></li>
+        </ul>
+
+        <nav id="overlay">
+            <div id="menu-btn" class="toggle-navbar" onclick="closeNav()">
+                <div class="bar white"></div>
+                <div class="bar white"></div>
+                <div class="bar white"></div>
             </div>
-            <ul id="top-nav" id="navigator">
-                <li><a href="#info">Basic-Info</a> </li>
-                <li><a href="#weather">Weather</a> </li>
-                <li><a href="#economy">Economy</a> </li>
-                <li><a href="#tourism">Tourism</a></li>
-
+            <ul id="top-nav">
+                <li onclick="closeNav()"><a href="#info">Basic-Info</a> </li>
+                <li onclick="closeNav()"><a href="#weather">Weather</a> </li>
+                <li onclick="closeNav()"><a href="#economy">Economy</a> </li>
+                <li onclick="closeNav()"><a href="#tourism">Tourism</a></li>
             </ul>
         </nav>
+
+        <div class="toggle-navbar" id="landing" onclick="openNav()">
+            <div class="bar white"></div>
+            <div class="bar white"></div>
+            <div class="bar white"></div>
+        </div>
 
         <h1>BARCELONA</h1>
 
@@ -104,7 +116,7 @@
 
         <br>
         <ul>
-            <li><a href="#navigator">
+            <li><a href="#top">
                     <img src="./icons8-scroll-up-64.png" width="60" class="nav-icon">
                 </a>
             </li>
@@ -112,13 +124,14 @@
     </footer>
 
     <script>
-        const toggleBar = () => {
-            const menu = document.getElementById("top-nav");
-            if (menu.style.display === "flex") {
-                return menu.style.display = "none";
-            } else {
-                return menu.style.display = "flex"
-            }
+        function openNav() {
+            document.getElementById("overlay").style.height = "auto";
+            document.getElementById("landing").style.visibility = "hidden";
+        }
+
+        function closeNav() {
+            document.getElementById("overlay").style.height = "0%";
+            document.getElementById("landing").style.visibility = "visible";
         }
     </script>
 </body>

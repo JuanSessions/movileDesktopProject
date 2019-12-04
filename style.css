@@ -111,12 +111,6 @@ h1 {
 }
 
 
-img {
-    max-width: 100%;
-    border-radius: 20px;
-
-}
-
 ul {
     list-style: none;
 }
@@ -154,6 +148,15 @@ a:hover {
 
 .city {
     background-image: url("panorama-427997_1920.jpg");
+}
+
+.water {
+    background-image: url("Webp.net-resizeimage (3).jpg");
+}
+
+.Borne {
+    background-image: url("Webp.net-resizeimage.jpg");
+
 }
 
 @media (max-width: 769px) {

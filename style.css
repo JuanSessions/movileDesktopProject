@@ -16,12 +16,15 @@ body {
 
 header,
 article,
-h2,
-p,
 ul,
 footer {
     text-align: center;
     padding: 1rem;
+}
+
+h2,
+p {
+    padding: 0.5rem;
 }
 
 article {

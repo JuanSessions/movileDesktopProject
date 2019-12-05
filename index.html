@@ -22,12 +22,26 @@
 <body>
     <header id="top">
 
+
         <ul id="desktop-nav">
             <li><a href="#info">Basic-Info</a> </li>
             <li><a href="#weather">Weather</a> </li>
             <li><a href="#economy">Economy</a> </li>
             <li><a href="#tourism">Tourism</a></li>
         </ul>
+
+        <nav>
+            <div id="menu-btn" onclick="toggleBar()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="top-nav">
+                <li><a href="#info">Basic-Info</a> </li>
+                <li><a href="#weather">Weather</a> </li>
+                <li><a href="#economy">Economy</a> </li>
+                <li><a href="#tourism">Tourism</a></li>
+
 
         <nav id="overlay">
             <div id="menu-btn" class="toggle-navbar" onclick="closeNav()">
@@ -41,6 +55,7 @@
                 <li onclick="closeNav()"><a href="#economy">Economy</a> </li>
                 <li onclick="closeNav()"><a href="#tourism">Tourism</a></li>
             </ul>
+
         </nav>
 
         <div class="toggle-navbar" id="landing" onclick="openNav()">
@@ -110,13 +125,17 @@
             The city where I was super happy and miserable too. ps: fuck Berlin lately!
         </p>
         <ul>
-            <li><a href="https://www.barcelona.com/" class="link" target="_blank">Barcelona's Page</a></li>
+            <li><a href="https://www.barcelona.com/" class="link" target="_blank">Barcelona's Web Page</a></li>
         </ul>
 
 
         <br>
         <ul>
+
             <li><a href="#top">
+
+            <li><a href="#top-nav">
+
                     <img src="./icons8-scroll-up-64.png" width="60" class="nav-icon">
                 </a>
             </li>

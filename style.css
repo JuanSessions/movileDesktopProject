@@ -1,219 +1,270 @@
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    background-image: url(./raindrops-3216609_1920.jpg);
-    line-height: 1.5;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background-image: url(./image/raindrops-3216609_1920.jpg);
+
+  line-height: 1.5;
 }
 
 #desktop-nav {
-    display: none;
+  display: none;
 }
 
-#overlay {
-    height: 0;
-    width: 90%;
-    margin-left: 5%;
-    position: fixed;
-    z-index: 1;
-    background-color: rgb(53, 46, 53);
-    overflow-y: hidden;
-    border-radius: 20px;
+#desktop-nav li {
+  animation: bounceIn 4s;
 }
-
-.toggle-navbar {
-    cursor: pointer;
-    padding: 1rem;
-}
-
-#landing {
-    width: 90%;
-    margin: 1rem auto;
-    border-radius: 20px;
-    background-color: rgb(53, 46, 53);
-}
-
-.bar {
-    width: 35px;
-    height: 3px;
-    margin: 8px auto;
-    background-color: #fff;
-}
-
-#menu-btn {
-    margin: 0 auto;
-    position: relative;
-
-}
-
-.white {
-    background-color: #fff;
-}
-
-#top-nav {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 1rem;
-}
-
-#top-nav li {
-
-    font-weight: bold;
-    background-image: url(./lakeTexture.jpg);
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-ul li {
-    list-style: none;
-    font-size: 1rem;
-}
-
-
 article,
 h1,
 h2,
 p,
 footer {
-    text-align: center;
-    padding: 1rem;
+  text-align: center;
+}
+
+.title {
+  margin: 1rem auto;
+  text-align: center;
+  padding: 0px 50px 80px 50px;
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  animation: fadein 7s infinite;
+  font-family: "Bebas Neue", cursive;
+}
+
+@keyframes fadein {
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.photo-heading {
+  display: flex;
+  justify-content: center;
+  background-image: url(./image/barcelona-evening-54e5d54b43_1280.jpg);
+  max-width: 450px;
+  background-size: cover;
+  background-position: 0% -60px;
+  background-repeat: no-repeat;
+  margin: 20px auto;
+  border-radius: 40px;
+  box-shadow: inset 0 0 0 200px rgba(141, 140, 64, 0.4);
+}
+
+#overlay {
+  height: 0;
+  width: 90%;
+  margin-left: 5%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(53, 46, 53, 0.7);
+  overflow-y: hidden;
+  border-radius: 20px;
+}
+
+.toggle-navbar {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#landing {
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 20px;
+  background-color: rgba(53, 46, 53, 0.7);
+}
+
+.bar {
+  width: 35px;
+  height: 3px;
+  margin: 8px auto;
+  background-color: #fff;
+}
+
+#menu-btn {
+  margin: 0 auto;
+  position: relative;
+}
+
+.white {
+  background-color: #fff;
+}
+
+#top-nav {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+#top-nav li {
+  font-weight: bold;
+
+  background-image: url(./image/raindrops-3216609_1920.jpg);
+
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1rem;
 }
 
 article {
-    margin: 3rem;
+  margin: 3rem;
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("img_parallax.jpg");
+  /* The image used */
+  background-image: url("./image/img_parallax.jpg");
 
-    /* Full height */
-    height: 100%;
+  /* Full height */
+  height: 100%;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
 h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 4rem;
-
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
 }
 
 .box {
-    padding: 2rem;
-    border-radius: 1rem;
-
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .box-1 {
-    background-color: rgb(184, 169, 199);
-
+  background-color: rgba(209, 199, 219, 0.7);
 }
 
 .box-2 {
-    background-color: rgb(117, 151, 117);
+  background-color: rgba(182, 201, 182, 0.7);
 }
 
 .box-3 {
-    background-color: rgb(91, 120, 136);
+  background-color: rgba(186, 200, 207, 0.7);
 }
 
 .box-4 {
-    background-color: rgb(92, 148, 145);
+  background-color: rgba(195, 212, 212, 0.7);
 }
 
 a {
-    text-align: center;
-    color: black;
-    text-decoration: none;
+  text-align: center;
+  color: black;
+  text-decoration: none;
 }
 
 .link {
-    color: rgb(230, 20, 55);
+  color: rgb(230, 20, 55);
 }
 
 a:hover {
-
-    color: rgb(173, 171, 46);
+  color: rgb(46, 69, 173);
 }
 
 .parallax {
-    width: 100%;
-    height: 300px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sun {
-    background-image: url("sun.jpg");
+  background-image: url("./image/sun.jpg");
 }
 
 .city {
-    background-image: url("panorama-427997_1920.jpg");
+  background-image: url("./image/panorama-427997_1920.jpg");
 }
 
 .water {
-    background-image: url("Webp.net-resizeimage (3).jpg");
+  background-image: url("./image/Webp.net-resizeimage (3).jpg");
 }
 
 .Borne {
-    background-image: url("Webp.net-resizeimage.jpg");
+  background-image: url("./image/Webp.net-resizeimage.jpg");
+}
 
+.lizard {
+  display: block;
+  margin: auto;
+  width: 20%;
+  border-radius: 20px;
 }
 
 @media (min-width: 769px) {
+  #top-nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+  }
 
-    #top-nav {
-        display: flex;
-        flex-direction: row;
-        padding-top: 1rem;
-    }
-    
+  #landing {
+    display: none;
+  }
 
-    #landing {
-        display: none;
-    }
+  #desktop-nav {
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 20px;
+    background-color: rgba(48, 75, 49, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
 
-    #desktop-nav {
-        width: 90%;
-        margin: 1rem auto;
-        border-radius: 20px;
-        background-color: rgb(53, 46, 53);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 1rem;
-    }
+  #desktop-nav li {
+    font-weight: bold;
+    background-image: url(./image/raindrops-3216609_1920.jpg);
 
-    #desktop-nav li {
-        font-weight: bold;
-        background-image: url(./lakeTexture.jpg);
-        padding: 10px;
-        border-radius: 10px;
-        border: 2px solid black;
-    }
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* -------responsive part-------- */
